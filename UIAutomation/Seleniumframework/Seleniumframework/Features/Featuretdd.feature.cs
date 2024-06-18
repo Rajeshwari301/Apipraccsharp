@@ -19,7 +19,7 @@ namespace Seleniumframework.Features
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public partial class VerifyYoutubeSearchFeatureFeature : object, Xunit.IClassFixture<VerifyYoutubeSearchFeatureFeature.FixtureData>, System.IDisposable
+    public partial class DataDrivenTestingFeature : object, Xunit.IClassFixture<DataDrivenTestingFeature.FixtureData>, System.IDisposable
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
@@ -28,10 +28,10 @@ namespace Seleniumframework.Features
         
         private Xunit.Abstractions.ITestOutputHelper _testOutputHelper;
         
-#line 1 "Featurebdd.feature"
+#line 1 "Featuretdd.feature"
 #line hidden
         
-        public VerifyYoutubeSearchFeatureFeature(VerifyYoutubeSearchFeatureFeature.FixtureData fixtureData, Seleniumframework_XUnitAssemblyFixture assemblyFixture, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
+        public DataDrivenTestingFeature(DataDrivenTestingFeature.FixtureData fixtureData, Seleniumframework_XUnitAssemblyFixture assemblyFixture, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
         {
             this._testOutputHelper = testOutputHelper;
             this.TestInitialize();
@@ -40,7 +40,7 @@ namespace Seleniumframework.Features
         public static void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Verify youtube search feature", "Search in the youtube", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Data driven testing", "Search in the youtube", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -80,16 +80,16 @@ namespace Seleniumframework.Features
             this.TestTearDown();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Search for testers talk")]
-        [Xunit.TraitAttribute("FeatureTitle", "Verify youtube search feature")]
-        [Xunit.TraitAttribute("Description", "Search for testers talk")]
+        [Xunit.SkippableFactAttribute(DisplayName="Data driven testing")]
+        [Xunit.TraitAttribute("FeatureTitle", "Data driven testing")]
+        [Xunit.TraitAttribute("Description", "Data driven testing")]
         [Xunit.TraitAttribute("Category", "Testers")]
-        public virtual void SearchForTestersTalk()
+        public virtual void DataDrivenTesting()
         {
             string[] tagsOfScenario = new string[] {
                     "Testers"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Search for testers talk", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Data driven testing", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 6
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -117,7 +117,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("Enter the URL", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 9
- testRunner.Then("Search for testers talk", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("Search for \'testers talk\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -130,12 +130,12 @@ this.ScenarioInitialize(scenarioInfo);
             
             public FixtureData()
             {
-                VerifyYoutubeSearchFeatureFeature.FeatureSetup();
+                DataDrivenTestingFeature.FeatureSetup();
             }
             
             void System.IDisposable.Dispose()
             {
-                VerifyYoutubeSearchFeatureFeature.FeatureTearDown();
+                DataDrivenTestingFeature.FeatureTearDown();
             }
         }
     }

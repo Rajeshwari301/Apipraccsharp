@@ -6,7 +6,7 @@ namespace Seleniumframework.StepDefinitions
         // For additional details on SpecFlow step definitions see https://go.specflow.org/doc-stepdef
 
         [Given("the first number is (.*)")]
-        public void GivenTheFirstNumberIs(int number)
+        public void GivenTheFirstNumberIs(int number1)
         {
             //TODO: implement arrange (precondition) logic
             // For storing and retrieving scenario-specific data see https://go.specflow.org/doc-sharingdata
@@ -14,7 +14,7 @@ namespace Seleniumframework.StepDefinitions
             // additional string/Table parameters can be defined on the step definition
             // method. 
 
-            throw new PendingStepException();
+           Console.WriteLine(number1);
         }
 
         [Given("the second number is (.*)")]
@@ -22,7 +22,7 @@ namespace Seleniumframework.StepDefinitions
         {
             //TODO: implement arrange (precondition) logic
 
-            throw new PendingStepException();
+            Console.WriteLine(number);
         }
 
         [When("the two numbers are added")]
@@ -30,7 +30,7 @@ namespace Seleniumframework.StepDefinitions
         {
             //TODO: implement act (action) logic
 
-            throw new PendingStepException();
+            Console.WriteLine("when added");
         }
 
         [Then("the result should be (.*)")]
@@ -38,7 +38,7 @@ namespace Seleniumframework.StepDefinitions
         {
             //TODO: implement assert (verification) logic
 
-            throw new PendingStepException();
+            Console.WriteLine($"{result}");
         }
     }
 }

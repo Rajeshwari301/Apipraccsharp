@@ -2,7 +2,7 @@
 
 Search in the youtube
 
-@tag1
+@Testers
 Scenario: Search for testers talk
 	Given Open the browser
 	When Enter the URL
