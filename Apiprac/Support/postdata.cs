@@ -11,4 +11,10 @@ namespace Apiprac.Support
         public string? name { get; set; }
         public string? job { get; set; }
     }
+
+    public class putdata
+    {
+        public string? name { get; set;}
+        public string? job { get; set;}
+    }
 }
