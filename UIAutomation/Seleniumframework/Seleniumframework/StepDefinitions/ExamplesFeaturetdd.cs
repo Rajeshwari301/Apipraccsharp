@@ -6,22 +6,23 @@ using TechTalk.SpecFlow;
 namespace Seleniumframework.StepDefinitions
 {
     [Binding]
-    public class Featuretdd
+    public class ExamplesFeaturetdd
 
     {
         private IWebDriver driver;
 
-        public Featuretdd(IWebDriver driver)
+        public ExamplesFeaturetdd(IWebDriver driver)
         {
             this.driver = driver;
         }
 
-        [Then(@"Search for a '([^']*)'")]
-        public void ThenSearchFor(string p0)
+        [Then(@"Find for (.*)")]
+        public void ThenFindForAaa(String search)
         {
-            driver.FindElement(By.XPath("//input[@id='search']")).SendKeys(p0);
+            driver.FindElement(By.XPath("//input[@id='search']")).SendKeys(search);
             driver.FindElement(By.XPath("//input[@id='search']")).SendKeys(Keys.Enter);
         }
+
 
 
     }

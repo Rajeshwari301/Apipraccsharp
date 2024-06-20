@@ -28,12 +28,13 @@ namespace Seleniumframework.StepDefinitions
             driver.Url = "https://www.youtube.com/";
         }
 
-        [Then(@"Search for testers talk")]
-        public void ThenSearchForTestersTalk()
+       
+        [Then(@"Search for the given word")]
+        public void ThenSearchForTheGivenWord()
         {
-            driver.FindElement(By.XPath("//input[@id='search']")).SendKeys("aaa");
-            driver.FindElement(By.XPath("//input[@id='searc']")).SendKeys(Keys.Enter);
-            //driver.Quit();
+            driver.FindElement(By.XPath("//input[@id='search']")).SendKeys("zzz");
+            driver.FindElement(By.XPath("//input[@id='search']")).SendKeys(Keys.Enter);
         }
+
     }
 }

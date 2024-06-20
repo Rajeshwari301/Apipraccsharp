@@ -6,4 +6,4 @@ Search in the youtube
 Scenario: Data driven testing
 	Given Open the browser
 	When Enter the URL
-	Then Search for 'testers talk'
+	Then Search for a 'testers talk'

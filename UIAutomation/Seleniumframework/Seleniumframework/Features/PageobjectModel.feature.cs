@@ -19,7 +19,7 @@ namespace Seleniumframework.Features
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public partial class VerifyYoutubeSearchFeatureFeature : object, Xunit.IClassFixture<VerifyYoutubeSearchFeatureFeature.FixtureData>, System.IDisposable
+    public partial class PageObjectModelTestingFeature : object, Xunit.IClassFixture<PageObjectModelTestingFeature.FixtureData>, System.IDisposable
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
@@ -28,10 +28,10 @@ namespace Seleniumframework.Features
         
         private Xunit.Abstractions.ITestOutputHelper _testOutputHelper;
         
-#line 1 "Featurebdd.feature"
+#line 1 "PageobjectModel.feature"
 #line hidden
         
-        public VerifyYoutubeSearchFeatureFeature(VerifyYoutubeSearchFeatureFeature.FixtureData fixtureData, Seleniumframework_XUnitAssemblyFixture assemblyFixture, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
+        public PageObjectModelTestingFeature(PageObjectModelTestingFeature.FixtureData fixtureData, Seleniumframework_XUnitAssemblyFixture assemblyFixture, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
         {
             this._testOutputHelper = testOutputHelper;
             this.TestInitialize();
@@ -40,7 +40,7 @@ namespace Seleniumframework.Features
         public static void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Verify youtube search feature", "Search in the youtube", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Page Object model testing", "A short summary of the feature", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -80,16 +80,16 @@ namespace Seleniumframework.Features
             this.TestTearDown();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Search for testers talk")]
-        [Xunit.TraitAttribute("FeatureTitle", "Verify youtube search feature")]
-        [Xunit.TraitAttribute("Description", "Search for testers talk")]
+        [Xunit.SkippableFactAttribute(DisplayName="Page Object model testing")]
+        [Xunit.TraitAttribute("FeatureTitle", "Page Object model testing")]
+        [Xunit.TraitAttribute("Description", "Page Object model testing")]
         [Xunit.TraitAttribute("Category", "Testers")]
-        public virtual void SearchForTestersTalk()
+        public virtual void PageObjectModelTesting()
         {
             string[] tagsOfScenario = new string[] {
                     "Testers"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Search for testers talk", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Page Object model testing", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 6
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -111,13 +111,16 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 7
- testRunner.Given("Open the browser", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("Enter the youtube URL", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 8
- testRunner.When("Enter the URL", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("Search for testers talk in youtube", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 9
- testRunner.Then("Search for the given word", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.And("Navigate to channel", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 10
+ testRunner.Then("Verify the title of the page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -130,12 +133,12 @@ this.ScenarioInitialize(scenarioInfo);
             
             public FixtureData()
             {
-                VerifyYoutubeSearchFeatureFeature.FeatureSetup();
+                PageObjectModelTestingFeature.FeatureSetup();
             }
             
             void System.IDisposable.Dispose()
             {
-                VerifyYoutubeSearchFeatureFeature.FeatureTearDown();
+                PageObjectModelTestingFeature.FeatureTearDown();
             }
         }
     }

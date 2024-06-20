@@ -6,4 +6,4 @@ Search in the youtube
 Scenario: Search for testers talk
 	Given Open the browser
 	When Enter the URL
-	Then Search for testers talk
+	Then Search for the given word
